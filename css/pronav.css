@@ -26,14 +26,15 @@ body{
 
 #circleCursor{
     position: fixed;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: white; 
     pointer-events: none; 
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
     box-shadow: 1px 1px 60px white;
+    transition: width 0.2s ease, height 0.2s ease;
 }
 
 li{
@@ -286,7 +287,10 @@ h3.proTitleX{
     text-align: center;
     font-family: stretch Pro;
 }
-
+h1.prosub{
+   text-align: center;
+   font-family: 'Freight Big Pro';
+}
 /* ----------------------------------------------- */
 @media (max-width:767px){
  ul.wholeList{text-align: center;}

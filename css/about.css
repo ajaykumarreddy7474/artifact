@@ -1,12 +1,17 @@
 @font-face {
     font-family: 'Stretch Pro';
-    src: url('/StretchPro.otf') format('opentype');
+    src: url('/fonts/StretchPro.otf') format('opentype');
 }
 
 body{
     background: black;
     color: white;
     position:relative;
+
+}
+html {
+    scroll-behavior: smooth;
+    cursor: none;
 }
 *{
  margin: 0;
@@ -41,8 +46,30 @@ body{
     left:1%;
 }
 
+#circleCursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white; 
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    box-shadow: 1px 1px 60px white;
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+
 @media (max-width:767px){
     .a-title{text-align: right;
     }
 }
-   
+   @media (max-width:767px){
+ 
+ #circleCursor{
+    display: none;
+ }
+ html{
+    cursor: pointer;
+ }
+}
