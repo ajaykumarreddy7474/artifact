@@ -1,8 +1,12 @@
 @font-face {
     font-family: 'Stretch Pro';
-    src: url('/StretchPro.otf') format('opentype');
+    src: url('/fonts/StretchPro.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('/fonts/Freight Big Pro Book.otf') format('opentype');
+}
 html {
     scroll-behavior: smooth;
     cursor: none;
@@ -256,7 +260,7 @@ span{
 }
 .aatitle{
     position: absolute;
-    bottom: 0;
+    bottom: 4%;
     right: 0;
     font-family: stretch Pro;
     font-size: clamp(15px, 1vw + 1rem, 50px);
@@ -266,7 +270,7 @@ span{
 }
 @keyframes aatitlex {
     from{
-        bottom: -9%;
+        bottom: -20%;
     }
 }
 
@@ -288,7 +292,12 @@ h3.proTitleX{
  ul.wholeList{text-align: center;}
  h1.mobilTitle {display: block;}
  .largeTitles{display: none;}
-
+ #circleCursor{
+    display: none;
+ }
+ html{
+    cursor: pointer;
+ }
 }
 
     
