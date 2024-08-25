@@ -1,0 +1,43 @@
+body{
+    background: black;
+    color: white;
+    position:relative;
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;       
+}
+.a-title{
+    font-size: clamp(7px, 6vw + 1rem, 320px);
+    text-align: center;
+    font-family: Stretch pro;
+    text-transform: uppercase;
+    animation: anix 1.4s ease-out;
+    
+}
+@keyframes anix {
+    from{ 
+        transform: rotateX(90deg);
+    }
+}
+
+.buttonx {
+    position: absolute;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    top: 10%;
+    left:1%;
+}
+
+@media (max-width:767px){
+    .a-title{text-align: right;
+    }
+}
+   
