@@ -25,11 +25,54 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+/* ------------------------------------ - ----------------------------------- */
+#modalMsg{
+ top:40%;
+    backdrop-filter: blur(25px);
+    z-index: 20;
+    padding:20px 10px;
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    animation:btnx 2s ease-out;
+  
+}@keyframes btnx{
+    from{
+        top:-20%;
+    }
+}
+#modalMsg h1{
+    font-size: clamp(10px,2vw + 14px, 30px);
+    text-align: center;
+}
+#modalMsg button{
+    margin-bottom: 20px;
+    background:none;
+    border:1px solid white;
+    color:black;
+    background: white;
+    padding: 6px 20px;
+    border-radius: 30px;
 
+}
+#btn:hover{
+    cursor:pointer;
+    /* color:black; */
+    font-weight: bold;
+}
+.modaline{
+    border-bottom: 1px solid red;
+}
+/* ------------------------------------ - ----------------------------------- */
 #circleCursor{
     position: fixed;
     width: 40px;
     height: 40px;
+   
     border-radius: 50%;
     background-color: white; 
     pointer-events: none; 
@@ -301,6 +344,7 @@ h3.proTitleX{
 h1.prosub{
    text-align: center;
    font-family: 'Freight Big Pro';
+   font-size: clamp(20px, 4vw + 10px, 40px);
 }
 /* ----------------------------------------------- */
 
@@ -323,7 +367,7 @@ h1.art-title{
 
 
 /* ----------------------------------------------- */
-@media (max-width:767px){
+@media (max-width:768px){
  ul.wholeList{text-align: center;}
  h1.mobilTitle {display: block;}
  .largeTitles{display: none;}
@@ -336,6 +380,17 @@ h1.art-title{
  .listItem .inside{
     display: none;
  }
+ #modalMsg{
+    display: block;
+    left: 0;
+}
 }
 
-    
+@media (min-width:768px){
+    #modalMsg{
+        top:0;
+        right:0;
+        width: 700px;
+     /* transform: translate(-50%,-50%); */
+    }
+}
