@@ -29,8 +29,5 @@ function handleMouseOut(event) {
     inside.style.display = 'none';
 }
 
-// Initial setup
 applyHoverEffects();
-
-// Update on window resize
 window.addEventListener('resize', applyHoverEffects);

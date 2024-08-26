@@ -72,7 +72,6 @@ body{
     position: fixed;
     width: 40px;
     height: 40px;
-   
     border-radius: 50%;
     background-color: white; 
     pointer-events: none; 
@@ -127,7 +126,6 @@ li .titlepro {
     background: white;
     color: black;
     font-size: clamp(2rem, 2.5vw + 1rem, 3rem);
-  
 }
 
 .listItem:hover {
@@ -136,7 +134,7 @@ li .titlepro {
 .listItem{
     position: relative;
 }
-.inside,.wf,.pf,.cl,.tp,.wa,.rnd,.dp,.wc,.pr{
+.inside,.wf,.pf,.dp,.wc,.lz,.ap,.snsa{
         position: absolute;
         font-size: 10px;
         display: none;
@@ -147,31 +145,64 @@ li .titlepro {
         animation: anix 1s ease-out;
         background-size: cover;
         border: 1px solid black;
-        width: clamp(220px, 17vw + 25px, 780px);
-        height: clamp(150px, 15vw + 50px, 750px);
+        width: clamp(200px, 8vw + 20rem, 600px);
+        height: clamp(200px, 8vw + 20rem, 600px);
 }
 .inside:hover{
     box-shadow: 10px 20px 120px white;
+    cursor: pointer;
 }
-.wf{background-image: url('/img/t8.jpg');}
-.pf{background-image: url('/img/t9.jpg');}
-.cl{background-image: url('/img/p1.jpg');}
-.wa{background-image: url('/img/p2.jpg');}
-.dp{background-image: url('/img/stars.jpg');}
-.rnd{background-image: url('/img/p3.jpg');}
-.tp{background-image: url('/img/abst.jpg');}
-.wc{background-image: url('/img/des.jpg');}
-.pr{background-image: url('/img/stars.jpg');}
+.wf{background-image: url('/img/ak.png');}
+.pf{background-image: url('/img/pt.png');}
+.lz{background-image: url('/img/lz.png');}
+.dp{background-image: url('/img//dp.png');}
+.ap{background-image: url('/img/ap.png');}
+.snsa{background-image: url('/img/snsa.png');}
+.gh{background-image: url('/img/download.jpg');}
 
 .inside h1{
-    background: white;
+    backdrop-filter: blur(20px);
     color: black;
-    animation: titleanix 1s ease-out;
+    background: white;
+    display: flex;
+    padding: 10px;
+    font-size:  clamp(20px, 2vw + 1rem, 40px);
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px red solid;
 }
-@keyframes titleanix {
+.inside h2{
+    backdrop-filter: blur(50px);
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color:white;
+    padding: 20px;
+    top: 22%;
+    left:2%;
+    font-size: 22px;
+    box-shadow: 0px 0px red;
+    animation:insdh2  0.5s ease-out alternate-reverse infinite;
+}@keyframes insdh2{
     from{
-        margin-top: 80px;
+        box-shadow: 1px 1px 49px 15px red;
     }
+}
+
+.inside p{
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    bottom: 0;
+    right: 0;
+    color:white;
+    padding: 20px;
+    font-family: poppins;
+    width: 270px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.inside h3{
+    background: red;
 }
 
 @keyframes anix{
