@@ -7,6 +7,9 @@
     font-family: 'Freight Big Pro';
     src: url('/fonts/Freight Big Pro Book.otf') format('opentype');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playball&display=swap');
+
 html {
     scroll-behavior: smooth;
     cursor: none;
@@ -52,7 +55,16 @@ li{
         transform: rotateX(90deg)
     }
 }
-
+.nametitle h1{
+    font-family: "Playball", cursive;
+  animation: namex 3s ease-out;
+  font-size: 40px;
+  
+}@keyframes namex{
+    from{
+        margin-top: -100px;
+    }
+}
 .wholeList{
     display: flex;
     flex-direction: column;
@@ -291,6 +303,26 @@ h1.prosub{
    font-family: 'Freight Big Pro';
 }
 /* ----------------------------------------------- */
+
+.artG{
+    margin-top: 80px;
+    text-align: center;
+}
+
+h1.art-title{
+    font-size: clamp(30px, 5vw + 1rem, 90px);
+    font-family: stretch pro;
+    text-transform: uppercase;
+    line-height: 90px;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------- */
 @media (max-width:767px){
  ul.wholeList{text-align: center;}
  h1.mobilTitle {display: block;}
@@ -300,6 +332,9 @@ h1.prosub{
  }
  html{
     cursor: pointer;
+ }
+ .listItem .inside{
+    display: none;
  }
 }
 
