@@ -14,7 +14,7 @@ const projects = [
     rnxz: "",
     linkX: "https://aj-portfolio7474.netlify.app",
     matter:
-      "Amazekart is simple Ecommerce website which based on Clothing brand.One of my first projects",
+      "This Portfolio website ensures you to show my expertise in various Skills",
    
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     rnxz: "",
     linkX: "https://liz-motors.netlify.app",
     matter:
-      "Amazekart is simple Ecommerce website which based on Clothing brand.One of my first projects",
+      "Lizmotors, uer-friendly website for a car manufacturer's timeline mindmap with interactive features. ",
     
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     rnxz: "",
     linkX: "https://artverse7474.netlify.app",
     matter:
-      "Amazekart is simple Ecommerce website which based on Clothing brand.One of my first projects",
+      "ArtVerse made with JavaScript plugin based which includes animations, interactions.  ",
     
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     rnxz: "",
     linkX:  "https://doublepros.netlify.app",
     matter:
-      "Amazekart is simple Ecommerce website which based on Clothing brand.One of my first projects",
+      "A simple user-login with TWO individual projects in it",
     
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     rnxz: "",
     linkX: "https://temp-pro.netlify.app/",
     matter:
-      "Amazekart is simple Ecommerce website which based on Clothing brand.One of my first projects",
+      "A General Temparature converter website.",
    
   },
   {
