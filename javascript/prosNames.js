@@ -1,4 +1,12 @@
-const projects = [
+const projects = [{
+  title: "unleash",
+  class: "snsa",
+  rnxz: "",
+  linkX: "https://unleash-eta.vercel.app/",
+  matter:
+    "A  JOB search front end NextJS project with unqiue style and responsive",
+ 
+},
   {
     title: "Amazekart",
     class: "wf",
@@ -44,15 +52,7 @@ const projects = [
       "A simple user-login with TWO individual projects in it",
     
   },
-  {
-    title: "TempPro",
-    class: "snsa",
-    rnxz: "",
-    linkX: "https://temp-pro.netlify.app/",
-    matter:
-      "A General Temparature converter website.",
-   
-  },
+  
   {
     title: "visit github",
     class: "gh",
